@@ -36,15 +36,3 @@ resource "kubernetes_limit_range_v1" "example" {
     }
   }
 }
-
-variable pod_cpu_limit {
-  description = "Please specify cpu limit"
-  type = string
-  default = ""
-}
-
-variable pod_memory_limit {
-  description = "Please specify cpu limit"
-  type = string
-  default = ""
-}
