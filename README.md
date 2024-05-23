@@ -2,9 +2,12 @@
 
 ### Please copy paste below code 
 ```
-module testns {
+module "testns" {
   source = "aziz200115/namespace/kubernetes"
-  name = "testns"
+  name      = "testns"
+  pod_quota = 50
+  pod_cpu_limit = "2096m"
+  pod_memory_limit = "4Gi"
   annotations = {
     new = "application"
   }
@@ -12,5 +15,6 @@ module testns {
     createdby = "aziz200115"
   }
 }
+
 
 ```
