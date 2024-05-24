@@ -1,4 +1,4 @@
 output namespace {
     description = "Outputs ns information"
-    value = module.testns.namespace
+    value = module.au-dev.namespace
 }
